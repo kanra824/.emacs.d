@@ -33,9 +33,9 @@
 (show-paren-mode 1)
 
 ;; ウィンドウ内に収まらないときだけ、カッコ内も光らせる
-(setq show-paren-style 'mixed)
-(set-face-background 'show-paren-match-face "grey")
-(set-face-foreground 'show-paren-match-face "black")
+;;(setq show-paren-style 'mixed)
+;;(set-face-background 'show-paren-match-face "grey")
+;;(set-face-foreground 'show-paren-match-face "black")
 
 ;; スクロールは１行ごとに
 (setq scroll-conservatively 1)
@@ -64,8 +64,6 @@
 ;; カーソル点滅オフ
 (blink-cursor-mode 0)
 
-
-
 (setq package-user-dir "~/.emacs.d/elisp/elpa/")
 (setq package-archives
       '(("gnu"   . "http://elpa.gnu.org/packages/")
@@ -84,6 +82,9 @@
 (require 'smartparens)
 (smartparens-global-mode t)
 
+
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -91,13 +92,35 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(custom-enabled-themes (quote (tango-dark))))
+ '(custom-enabled-themes (quote (tango-dark)))
+ '(package-selected-packages
+   (quote
+    (company-coq web-mode slim-mode magit use-package smartparens rubocop rake rainbow-delimiters flycheck exec-path-from-shell caml auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(web-mode-comment-face ((t (:foreground "#D9333F"))))
+ '(web-mode-css-at-rule-face ((t (:foreground "#FF7F00"))))
+ '(web-mode-css-pseudo-class-face ((t (:foreground "#FF7F00"))))
+ '(web-mode-css-rule-face ((t (:foreground "#A0D8EF"))))
+ '(web-mode-doctype-face ((t (:foreground "#82AE46"))))
+ '(web-mode-html-attr-name-face ((t (:foreground "#C97586"))))
+ '(web-mode-html-attr-value-face ((t (:foreground "#82AE46"))))
+ '(web-mode-html-tag-face ((t (:foreground "#E6B422" :weight bold))))
+ '(web-mode-server-comment-face ((t (:foreground "#D9333F")))))
+
+
+
+;;auto-complete
+(require 'auto-complete)
+(global-auto-complete-mode t)
+
+
+;;railbow-delimiters
+(require 'rainbow-delimiters)
+
 
 ;; Tuareg
 ;;(setenv "PATH" (concat "/usr/bin" ":" (getenv "PATH")))
@@ -155,9 +178,15 @@
         ("\\.js$"   . java-mode)
         ("\\.el$"   . emacs-lisp-mode)
 	  ("\\.lisp$" . lisp-mode)
-	  ("\\.ml[ilyp]?$" . tuareg-mode) ;<-この行を追加
+	  ("\\.ml[ilp]?$" . tuareg-mode) ;<-この行を追加
     ) auto-mode-alist)
     )
+
+
+
+
+
+;;rust
 
 (add-to-list 'load-path "~/.emacs.d/elisp/elpa/rust-mode/")
 (autoload 'rust-mode "rust-mode" nil t)
@@ -180,3 +209,79 @@
                              ;;; この辺の設定はお好みで
                              (set (make-variable-buffer-local 'company-idle-delay) 0.1)
                              (set (make-variable-buffer-local 'company-minimum-prefix-length) 0)))
+
+
+
+
+
+
+
+;(require 'projectile)
+;(projectile-global-mode)
+;(require 'projectile-rails)
+;(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+
+
+
+
+
+(autoload 'flycheck-mode "flycheck")
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (setq flycheck-checker 'ruby-rubocop)
+             (flycheck-mode 1)))
+
+
+
+(require 'magit)
+(define-key global-map (kbd "M-g") 'magit-status)
+
+
+;; slim
+(unless (package-installed-p 'slim-mode)
+  (package-refresh-contents) (package-install 'slim-mode))
+(add-to-list 'auto-mode-alist '("\\.slim?\\'" . slim-mode))
+
+
+;; web mode
+;; http://web-mode.org/
+;; http://yanmoo.blogspot.jp/2013/06/html5web-mode.html
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.ctp\\'"   . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; web-modeの設定
+(defun web-mode-hook ()
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-engines-alist
+        '(("php"    . "\\.ctp\\'"))
+        )
+  )
+
+(add-hook 'web-mode-hook  'web-mode-hook)
+
+;; 色の設定
+
+
+
+
+(fset 'openml
+   [?\C-x ?2 ?\C-x ?3 ?\M-x ?e ?h backspace ?s ?h ?e ?l ?l return ?\C-x ?o ?\C-x ?3 ?\C-x ?\C-f ?e ?v ?a ?l ?. ?m ?l return ?\C-x ?o ?\C-x ?\C-f ?m ?a ?i ?n ?. ?m ?l return ?\C-x ?o ?\C-x ?3 ?\C-x ?\C-f ?s ?y ?n ?t ?a ?x ?. ?m ?l return ?\C-x ?o ?\C-x ?\C-f ?l ?e backspace backspace ?p ?a ?r ?s ?e ?r ?. ?m ?l ?y return])
+
+
+;;proofgeneral
+(load "~/.emacs.d/lisp/PG/generic/proof-site")
+
+
+
+;;MELPA
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
+
+;;company-coq
+;; Load company-coq when opening Coq files
+(add-hook 'coq-mode-hook #'company-coq-mode)

@@ -1,128 +1,128 @@
-git push origin Ex.6.9
 ls
-bash zip
-bash zip
-bash zip
-git status
-git branch
-git stash
-git checkout -b Ex.7.2.ml
-git branch
-git status
-git add .
-git commit -m "resolve #20"
-git config --global user.email "mdyh2a380824@gmail.com"
-git config --global user.name "yohei"
-git commit -m "resolve #20"
-git push origin Ex.7.2
-git branch
-git push origin Ex.7.2.ml
-git push origin Ex.7.2.ml
-git checkout master
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+./a.out
+./a.out
+g++ c.cpp
+./a.out
+g++ c.cpp
+./a.out
+./a.out
+g++ c.cpp
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+g++ c.cpp
+./a.out
+g++ c.cpp
+./a.out
+g++ c.cpp
+./a.out
+./a.out
+./a.out
+g++ c.cpp
+./a.out
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+./a.out
 ls
-git branch
-git pull origin master
-git branch -D Ex.7.2.ml
-git checkout -b Ex.7.4
-git status
-bash zip
-bash zip
-bash zip
-bash zip
-bash zip
-git status
-git add .
-git commit -m "resolve #21"
-git push origin Ex.7.4
-git checkout master
-git pull origin master
-cd ..
-cargo run
-cargo run
-cargo run
-cargo run
-cargo run
-rustc main.rs
-rustc main.rs
-cd ..
-cargo build
-cargo build
-cargo build
-cargo run
-cargo run
-cargo run
-cargo run
-cargo run
-cargo run
-cargo run
-ls
-rustc main.rs
-cargo run
-cargo run
-cargo run
-cd ../..
-cargo new --bin variables
-ls
-cd variables
-ls
-cd src
-ls
-carugo run
-cargo run
-cargo run
-bash zip
-git status
-ls
-bash zip
-git status
-git branch
-git add .
-git commit -m "Ex.5.6"
-git push origin Ex.5.6
-git commit --allow-empty -m "resolve #15"
-git push origin Ex.5.6
-git status
-git checkout master
-git pull origin master
-bash zip
-git status
-git branch
-git checkout Ex.7.6
-git add .
-git status
-git commit -m "resolve #22"
-git push origin Ex.7.6
-git branch
-git log
-git reset
-git status
-git reset HEAD^
-git status
-git checkout -b Ex.7.6
-git add .
-git commit -m "resolve #22"
-git push origin Ex.7.6
-git checkout master
-git pull origin master
-git checkout -b Ex.7.8
-bash zip
-git status
-git add .
-git branch
-git commit -m "resolve #23"
-git push origin Ex.7.8
-gti checkout master
-git branch
-git checkout master
-git pull origin master
-git checkout -b comment
-ls
-bash zip
-ls
-rm Ex.3.1.ml
-bash zip
-ls
-ls
-ls
-ls
-ls
+g++ a.cpp
+./a.out
+g++ a.cpp
+./a.out
+g++ a.cpp
+./a.out
+g++ a.cpp
+./a.out
+./a.out
+./a.out
+g++ b.cpp
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+g++ b.cpp
+./a.out
+./a.out
+./a.out
+g++ d.cpp
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+g++ d.cpp
+g++ d.cpp
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+./a.out
+g++ d.cpp
+g++ d.cpp
+g++ d.cpp
+./a.out
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+g++ c.cpp
+./a.out
+g++ c.cpp
+g++ hack.cpp
+./a.out
