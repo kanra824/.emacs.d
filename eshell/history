@@ -1,72 +1,97 @@
+g++ -std=c++14 test.cpp
+./a.out
+g++ -std=c++14 test.cpp
+./a.out
+g++ 1.5.cpp
+./a.out
+g++ 1.5.cpp
 ls
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-./a.out
-./a.out
-g++ c.cpp
-./a.out
-g++ c.cpp
-./a.out
-./a.out
-g++ c.cpp
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-./a.out
-g++ c.cpp
-./a.out
-g++ c.cpp
-./a.out
-g++ c.cpp
-./a.out
-./a.out
-./a.out
-g++ c.cpp
-./a.out
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-./a.out
+mv 1.5.cpp 1.5.1.cpp
+l
 ls
+g++ 1.5.1.cpp
+./a.out
+g++ 1.5.4.cpp
+g++ 1.5.4.cpp
+g++ 1.5.4.cpp
+g++ -std=c++14 test.cpp
+g++ 1.5.4.cpp
+g++ 1.5.4.cpp
+./a.out
+g++ test.cpp
+g++ test.cpp
+./a.out
+g++ test.cpp
+./a.out
+g++ test.cpp
+./a.out
+./a.out
+./a.out
+./a.out
+g++ segtree.cpp
+./a.outt
+./a.out
+g++ graph.cpp
+g++ graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+g++ -std=c++14 graph.cpp
+g++ -std=c++14 graph.cpp
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ -std=c++14 graph.cpp
+./a.out
+g++ a.cpp
+g++ a.cpp
+g++ a.cpp
+g++ a.cpp
 g++ a.cpp
 ./a.out
 g++ a.cpp
 ./a.out
+./a.out
+./a.out
+g++ a.cpp
+3 2
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
 g++ a.cpp
 ./a.out
 g++ a.cpp
 ./a.out
+3 10
 ./a.out
 ./a.out
-g++ b.cpp
-g++ b.cpp
 ./a.out
-g++ b.cpp
 ./a.out
-g++ b.cpp
 ./a.out
-g++ b.cpp
+g++ a.cpp
 ./a.out
-g++ b.cpp
+./a.out
+g++ a.cpp
 ./a.out
 g++ b.cpp
 ./a.out
@@ -76,6 +101,11 @@ g++ b.cpp
 ./a.out
 g++ b.cpp
 ./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
 g++ b.cpp
 ./a.out
 g++ b.cpp
@@ -83,46 +113,16 @@ g++ b.cpp
 g++ b.cpp
 ./a.out
 ./a.out
+g++ b.cpp
 ./a.out
-g++ d.cpp
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-g++ d.cpp
-g++ d.cpp
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-./a.out
-g++ d.cpp
-g++ d.cpp
-g++ d.cpp
+g++ b.cpp
 ./a.out
 g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
-g++ c.cpp
+./a.out
+v
 g++ c.cpp
 ./a.out
-g++ c.cpp
-g++ hack.cpp
+g++ test.cpp
+./a.out
+g++ test.cpp
 ./a.out
